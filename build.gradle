@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id("name.remal.lombok") version "2.0.4"
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+test {
+    useTestNG()
+}
