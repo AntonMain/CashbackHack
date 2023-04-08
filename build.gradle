@@ -22,5 +22,5 @@ test {
 }
 
 test {
-    useTestNG()
+    useJUnit()
 }
